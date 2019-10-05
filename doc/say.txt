@@ -46,7 +46,11 @@ https://github.com/skanehira/say.vim
 ==============================================================================
 USAGE						*say-usage*
 
+OPTIONS						*say-options*
 
+g:say_voice					*g:say_voice*
+	Change voice.
+	Please run `say -v "?"` to check voice list.
 
 ==============================================================================
 INTERFACE					*say-interface*
