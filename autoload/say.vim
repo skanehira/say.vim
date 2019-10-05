@@ -14,7 +14,9 @@ function! say#say(start, end, ...) abort
 	if a:0 != 0
 		let text = a:1
 	endif
-	let cmd = ['say', '-v', 'Alex', text]
+
+    let voice = get(g:, 'say_voice', 'Alex')
+	let cmd = ['say', '-v', voice, text]
 
 	call job_start(cmd, {
 				\ 'err_cb': function('s:err_cb'),
